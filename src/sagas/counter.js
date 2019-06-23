@@ -21,7 +21,7 @@ export function* submitcode(dataParams) {
     };
     const response = yield call(
       fetch,
-      "http://127.0.0.1:8000/runcommand/",
+      "http://18.191.214.58:8000/runcommand/",
       postOptions
     );
     const data = yield call([response, response.json]);
