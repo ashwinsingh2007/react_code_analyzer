@@ -19,14 +19,14 @@ export function* submitcode(dataParams) {
       }),
       body: JSON.stringify(dataParams)
     };
-    const response = yield call(
-      fetch,
-      "http://18.191.214.58:8000/runcommand/",
-      postOptions
-    );
-    const data = yield call([response, response.json]);
-    console.log("--response--", response);
+    // const url = 'http://18.191.214.58:8000/runcommand/';
+    const url = "http://127.0.0.1:8000/runcommand/";
+    const response = yield call(fetch, url, postOptions);
+    let data = yield call([response, response.json]);
+    console.log("--response--", data);
     yield put({ type: "SHOW_MESSAGE", data });
+    data = {loading:false} ;
+    yield put({ type: "LOADING", data });
   } catch (e) {
     console.log("error--", e);
   }

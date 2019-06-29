@@ -8,6 +8,8 @@ export default function counter (state = 0, { type, data }) {
       return state - 1;
     case 'SHOW_MESSAGE':
       return data;
+    case 'LOADING':
+      return {...state, ...data};
     default:
       return state;
   }

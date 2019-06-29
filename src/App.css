@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  padding: 15px;
 }
 
 .App-logo {
@@ -21,8 +21,61 @@
 .App-intro {
   font-size: large;
 }
+.text-center {
+  text-align: center !important;
+}
+.text-code {
+  border: 2px solid rgba(125, 120, 120, 0.31);
+  width: 80%;
+  margin: auto;
+  /* text-align: center; */
+  display: flex;
+  margin-top: 20px;
+}
+.button-submit-code {
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+  width: 85%;
+}
+.card-container > .ant-tabs-card > .ant-tabs-content {
+  margin-top: -16px;
+}
+
+.card-container > .ant-tabs-card > .ant-tabs-content > .ant-tabs-tabpane {
+  background: #fff;
+  padding: 16px;
+
+}
+
+.card-container > .ant-tabs-card > .ant-tabs-bar {
+  border-color: #fff;
+}
+
+.card-container > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab {
+  border-color: transparent;
+  background: transparent;
+}
+
+.card-container > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active {
+  border-color: #fff;
+  background: #fff;
+}
+.ant-collapse-header {
+  background: #fa7414;
+  color: white !important;
+}
+.margin-top-bottom {
+  margin: 8px 0px;
+  font-size: 15px;
+}
+
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
